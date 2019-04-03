@@ -1,0 +1,280 @@
+#home {
+    font-family: 'Rubik', sans-serif;
+    background-image: url("../images/japan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+   }
+
+
+
+@media only screen and (max-width: 600px) {
+   body
+      {
+       min-width: 320px;
+      }
+   
+  nav ul {
+      flex-direction: column;
+         }
+}
+/*Navigation bar*/
+nav {
+    margin: 0;
+    padding: 0;
+    background: #f48642;
+}
+
+nav ul  {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    color: green;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+nav ul li {
+    color: #FFF;
+}
+
+nav a:hover {
+   background-color: #f2b55e;
+   padding: auto;
+}
+
+/*FOOTER*/
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    line-height: 5;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+footer li {
+    margin: 20px;
+    padding:20px;
+}
+
+
+/*INDEX.HTML pages starts here*/
+
+.mainpage div{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainpage {
+    font-size: medium;
+  
+}
+
+ a:link {
+     text-decoration: none;
+ }
+ a:hover {
+     color: green;
+ }
+ 
+ 
+main {
+    height: 100px;
+    text-shadow:2px 2px 5px rgb(65, 238, 244);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 140px;
+    font-size: 2em;
+}
+
+
+
+
+ /*STREETFOOD.HTML page starts here*/
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.text {
+    padding-top: 0;
+    margin-top: 0;
+}
+div h2 {
+    text-align: center;
+    font-weight: 900;
+    color: red;
+    
+}
+
+.text, .manners {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px;
+  margin: 8px;
+  text-align: center;
+  background-image: url("../images/yatai.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #e8d815;
+}
+    
+
+#blocks {
+    margin: 20px;
+}
+
+article {
+    background: #fff;
+    margin-bottom:20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+article {
+    flex: 0 1 30%;
+}
+
+
+
+
+/*ETIQUETTEE page starts here*/
+#blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+.manners{
+    background-image: url("../images/sakura.jpg");
+    color: #6de835;
+}
+
+
+ 
+
+
+
+
+
+/*CONTACT PAGE starts here*/
+#contactus {
+    font-family: 'Rubik', sans-serif;
+      color: black;
+      }  
+    
+/*.wrapper {*/
+/*   width: 100%;*/
+/*   height: 50%;*/
+/*  background-size: 100% 100%;*/
+/*} */
+
+.photos {
+    height: 600px;
+    background-image: url("../images/geisha.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    padding: 0;
+    display: block;
+   
+        }
+
+
+body {
+    background: #FFF;
+    margin: 0;
+    font-weight: 800;
+     }
+ 
+
+
+#bottomcontainer {
+    display: flex;
+    background: #FFF;
+    /*felx-wrap: wrap;*/
+    flex-flow: row;
+    height: 250px;
+    margin-top: 0;
+    padding-top: 0;
+                  }
+
+
+.name {
+    background: rgb(86, 81, 81);
+      }
+
+div form {
+    display: flex;
+    height: 250px;
+    width: 100%;
+          }
+ 
+.okay {
+    margin: 40px;
+    padding: 20px;
+       } 
+
+.questions p {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0;
+             }
+    
+.questions {
+    line-height: 2;
+    width: 33%;
+    flex-grow: 1;
+    background: rgb(224, 61, 2);
+    text-align: center;
+   
+            }
+.name {
+     line-height: 2;
+     font-size: 20px;
+     flex-grow: 1;
+     width: 33%;
+     text-align: center;
+      }
+
+
+
+

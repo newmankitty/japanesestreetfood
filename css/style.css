@@ -1,30 +1,41 @@
-#home {
+html {
     font-family: 'Rubik', sans-serif;
-    background-image: url("../images/japan.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    width: 100%;
-   }
-
-
-
-@media only screen and (max-width: 600px) {
-   body
-      {
-       min-width: 320px;
-      }
-   
-  nav ul {
-      flex-direction: column;
-         }
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+   
+a:link {
+  color: blue; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
 /*Navigation bar*/
 nav {
     margin: 0;
     padding: 0;
     background: #f48642;
+   
 }
 
 nav ul  {
@@ -48,9 +59,14 @@ nav ul li {
 }
 
 nav a:hover {
-   background-color: #f2b55e;
+   background-color: #f2b098;
    padding: auto;
 }
+
+a:visited { 
+  color: #3aa842;
+}
+
 
 /*FOOTER*/
 footer ul{
@@ -61,7 +77,7 @@ footer ul{
     margin: 0;
     padding: 0;
     width: auto;
-    height: 100px;
+    min-height: 100px;
     align-items: center;
 }
 
@@ -72,40 +88,28 @@ footer li {
 
 
 /*INDEX.HTML pages starts here*/
-
-.mainpage div{
+html, body{
+    height: 100%;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+#home {
+    background-image: url("../images/japan.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.mainpage {
-    font-size: medium;
-  
-}
-
- a:link {
-     text-decoration: none;
- }
- a:hover {
-     color: green;
- }
- 
- 
-main {
-    height: 100px;
-    text-shadow:2px 2px 5px rgb(65, 238, 244);
-    display: flex;
+    color: #fff;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 140px;
-    font-size: 2em;
+   
 }
 
-
-
+.ichi {
+    text-shadow: 1px 1px #f9f4a7;
+}
 
  /*STREETFOOD.HTML page starts here*/
 body {
@@ -113,34 +117,41 @@ body {
 }
 
 .text {
-    padding-top: 0;
     margin-top: 0;
 }
-div h2 {
+div h1 {
     text-align: center;
     font-weight: 900;
-    color: red;
+    color: rgb(253, 247, 83);
     
 }
 
+.text { 
+    background-image: url("../images/vanillasoft.png");
+}
+    
 .text, .manners {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 900;
   padding: 8px;
-  margin: 8px;
+  margin: 0px;
   text-align: center;
-  background-image: url("../images/yatai.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #e8d815;
+  color: rgb(253, 247, 83);
 }
     
 
 #blocks {
-    margin: 20px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      margin: 20px;
+    }
+  
+
 
 article {
     background: #fff;
@@ -162,123 +173,116 @@ article h2 {
     margin-right: auto;
 }
 
-
-#blocks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
 article {
     flex: 0 1 30%;
 }
 
 
 
-
 /*ETIQUETTEE page starts here*/
-#blocks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
 
-.manners{
+
+.manners  {
     background-image: url("../images/sakura.jpg");
-    color: #6de835;
 }
 
-
- 
-
-
-
+div p {
+    font-size: 25px;
+    color: rgba(1, 54, 41, 0.83); 
+    
+}
 
 
 /*CONTACT PAGE starts here*/
 #contactus {
     font-family: 'Rubik', sans-serif;
       color: black;
+      margin: 0;
+      padding: 0;
       }  
     
-/*.wrapper {*/
-/*   width: 100%;*/
-/*   height: 50%;*/
-/*  background-size: 100% 100%;*/
-/*} */
+
 
 .photos {
     height: 600px;
     background-image: url("../images/geisha.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     margin-top: 0;
     padding: 0;
     display: block;
-   
-        }
-
-
-body {
-    background: #FFF;
-    margin: 0;
-    font-weight: 800;
-    
-     }
- 
-
-
+ }
 #bottomcontainer {
-    display: flex;
+    /*display: flex;*/
     background: #FFF;
-    felx-wrap: wrap;
-    flex-flow: row;
-    height: 300px;
+    /*flex-wrap: wrap;*/
+    /*flex-flow: row;*/
+    min-height: 300px;
     margin-top: 0;
     padding-top: 0;
-    align-items: center;
-                  }
+    align-content: center;
+    justify-content: center;
+}
 
-
-.name {
-    background: rgb(86, 81, 81);
-      }
 
 div form {
     display: flex;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
           }
  
 .okay {
     margin: auto;
     padding: 20px;
+    text-align: center;
        } 
 
-.questions p {
-    text-decoration: none;
-    font-size: 20px;
-    margin: 10px;
-    padding: 0;
-             }
-    
 .questions {
     line-height: 2;
     width: 33%;
     flex-grow: 1;
     background: rgb(224, 61, 2);
     text-align: center;
-   
-            }
+    justify-content: center;
+}
+.questions p {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0;
+    color: white;
+             }
+  
 .name {
+    background: rgb(86, 81, 81);
      line-height: 2;
-     font-size: 20px;
-     flex-grow: 1;
      width: 33%;
+     flex-grow: 1;
+     font-size: 20px;
      text-align: center;
+     
       }
 
-
-
-
+@media (max-width: 600px) {
+    body
+      {
+       min-width: 320px;
+      }
+   
+  nav ul {
+      flex-direction: column;
+         }
+         form {
+            /*display: flex;*/
+            flex-direction: column;
+         }
+         
+         div.questions, div.name {
+             width: 100%;
+         }
+         #blocks {
+            display: flex;
+            flex-direction: column;
+}
+}

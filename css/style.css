@@ -118,11 +118,6 @@ html, body{
     background: linear-gradient(to right, rgb(116, 235, 213), rgb(172, 182, 229));
 }
 
-/*.text h1, .manners h1 {*/
-/*    text-align: center;*/
-/*    color: #01070a;*/
-/*    padding: 20px;*/
-/*}*/
 
 h1 {
     padding: 30px;
@@ -153,8 +148,9 @@ article {
     background: #fff;
     margin-bottom:20px;
     padding: 10px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    flex: 0 1 30%;
 }
 
 article h2 {
@@ -163,16 +159,16 @@ article h2 {
     margin: 10px 0;
     
 }
-
+.blocks p {
+    padding: 2px;
+}
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
-article {
-    flex: 0 1 30%;
-}
 
 .scroll {
     position: fixed;
@@ -190,11 +186,7 @@ article {
 /*ETIQUETTEE page starts here*/
 .manners  {
     background: linear-gradient(to top, rgba(225, 144, 246, 1.0), rgba(252, 181, 161, 1.0));
-    
 }
-
-
-
 
 div p {
     font-size: 25px;
@@ -211,7 +203,7 @@ div p {
     
 
 
-.photos {
+header {
     height: 600px;
     background-image: url("../images/geisha5.jpg");
     background-size: cover;
@@ -220,8 +212,7 @@ div p {
     margin-top: 0;
     padding: 0;
     display: block;
- }
-
+}
 
  
  
@@ -247,15 +238,10 @@ form {
     font-weight: 800;
 }
     
-
 input[type=radio]+label {
     width: 40px;
     height: 40px;
     margin: 5px;
-}
-
-input[type=radio],#no>label {
-    margin-left: -40px;
 }
 
 .questions {
@@ -266,7 +252,9 @@ input[type=radio],#no>label {
     background: #A1F0EC;
     text-align: center;
     align-content: center;
+    font-size: 1.1em;
 }
+
 .questions p {
     text-decoration: none;
     font-size: 1.5em;
@@ -274,7 +262,6 @@ input[type=radio],#no>label {
     padding: 0;
     color: #1217B3;
 }
-
 
 .name {
      margin: 0;
@@ -292,6 +279,7 @@ input[type=radio],#no>label {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 3px;
+    text-align: center;
 }
 
 .area1 {
@@ -322,11 +310,11 @@ input[type=radio],#no>label {
 }
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px)  {
     body
       {
        min-width: 320px;
-       font-size: 1.25em;
+       font-size: 1.2em;
       }
     nav {
        position: initial;
@@ -344,6 +332,13 @@ input[type=radio],#no>label {
              width: 100%;
              height: 300px;
          }
+    div.okay {
+        
+        margin-top: 10px;
+    }     
+    .questions p {
+        margin-top: 15px;
+    }
          
     #blocks {
             display: flex;
